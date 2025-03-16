@@ -32,7 +32,9 @@ class SolsticeDatacenterModel:
                  cooling_type: str = 'air',  # 'air' or 'water'
                  datacenter_capacity_mw: float = 1.0,
                  simulation_start_date: str = '2023-01-01',
-                 simulation_days: int = 7):
+                 simulation_days: int = 7,
+                 cooling_efficiency_factor: float = 1.0,
+                 pue_overhead: float = 1.1):  # Add PUE overhead parameter
         """
         Initialize the datacenter model with the specified configuration.
         
@@ -44,6 +46,8 @@ class SolsticeDatacenterModel:
             datacenter_capacity_mw: Datacenter capacity in megawatts
             simulation_start_date: Start date for the simulation in YYYY-MM-DD format
             simulation_days: Number of days to simulate
+            cooling_efficiency_factor: Factor to adjust cooling system efficiency (default: 1.0)
+            pue_overhead: Additional PUE overhead factor for miscellaneous power usage (default: 1.1)
         """
         # First check if we have a config file
         if config_file:
@@ -53,6 +57,8 @@ class SolsticeDatacenterModel:
         self.location = location
         self.cooling_type = cooling_type
         self.datacenter_capacity_mw = datacenter_capacity_mw
+        self.cooling_efficiency_factor = cooling_efficiency_factor
+        self.pue_overhead = pue_overhead  # Store the PUE overhead factor
         
         # Parse the start date and calculate end date
         self.start_date = datetime.strptime(simulation_start_date, '%Y-%m-%d')
@@ -246,10 +252,11 @@ class SolsticeDatacenterModel:
             
             # Calculate cooling power based on cooling type
             if self.cooling_type == 'air':
-                cooling_power = crac_fan_power + chiller_power
+                cooling_power = (crac_fan_power + chiller_power) * self.cooling_efficiency_factor
                 water_usage = 0.0  # No water usage for air cooling
             else:  # water cooling
-                cooling_power = crac_fan_power + ct_fan_power + chiller_power + cw_pump_power + ct_pump_power
+                cooling_power = (crac_fan_power + ct_fan_power + chiller_power + 
+                                cw_pump_power + ct_pump_power) * self.cooling_efficiency_factor
                 
                 # Update cooling tower water parameters for water usage calculation
                 self.dc_model.hot_water_temp = avg_crac_return_temp
@@ -262,8 +269,8 @@ class SolsticeDatacenterModel:
             self.simulation_results['cooling_energy'].append(cooling_power)
             self.simulation_results['water_usage'].append(water_usage)
             
-            # Calculate total energy
-            total_energy = it_power + cooling_power
+            # Calculate total energy including PUE overhead
+            total_energy = (it_power + cooling_power) * self.pue_overhead
             self.simulation_results['total_energy'].append(total_energy)
             
             # Calculate carbon emissions
@@ -594,11 +601,13 @@ class SolsticeDatacenterModel:
 if __name__ == "__main__":
     # Create a model for a datacenter in Texas with air cooling
     model = SolsticeDatacenterModel(
-        location='TX',  # Texas/ERCOT region
+        location='TX',
         cooling_type='air',
         datacenter_capacity_mw=1.0,
         simulation_start_date='2023-06-01',
-        simulation_days=7
+        simulation_days=7,
+        cooling_efficiency_factor=0.85,  # 85% efficiency
+        pue_overhead=1.1  # Add PUE overhead
     )
     
     # Run the simulation

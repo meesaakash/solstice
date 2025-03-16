@@ -224,8 +224,17 @@ class DataCenter_ITModel():
             rack_supply_approach_temp_list (list[float]): models the supply approach temperature for each rack based on geometry and estimated from CFD
             rack_CPU_config (list[list[dict]]): A list of lists where each list is associated with a rack. 
             It is a list of dictionaries with their full load and idle load values in W
+            max_W_per_rack (int): Maximum power per rack
+            DC_ITModel_config (config): Configuration object containing DC parameters
             chiller_sizing (bool): Whether to perform Chiller Power Sizing
         """
+        # Add these default values if they don't exist in DC_ITModel_config
+        if DC_ITModel_config:
+            if not hasattr(DC_ITModel_config, 'cooling_efficiency_factor'):
+                DC_ITModel_config.cooling_efficiency_factor = 1.0
+            if not hasattr(DC_ITModel_config, 'pue_overhead'):
+                DC_ITModel_config.pue_overhead = 1.0
+
         self.DC_ITModel_config = DC_ITModel_config
         self.racks_list = []
         self.rack_supply_approach_temp_list = rack_supply_approach_temp_list
@@ -430,47 +439,46 @@ def calculate_chiller_power(max_cooling_cap, load, ambient_temp):
 
 
 def calculate_HVAC_power(CRAC_setpoint, avg_CRAC_return_temp, ambient_temp, data_center_full_load, DC_Config, ctafr=None):
-    """Calculate the HVAV power attributes
+    """Calculate the HVAC power attributes with cooling efficiency and PUE overhead factors
 
-        Args:
-            CRAC_Setpoint (float): The control action
-            avg_CRAC_return_temp (float): The average of the temperatures from all the Racks + their corresponding return approach temperature (Delta)
-            ambient_temp (float): outside air temperature
-            data_center_full_load (float): total data center capacity
+    Args:
+        CRAC_Setpoint (float): The control action
+        avg_CRAC_return_temp (float): The average of the temperatures from all the Racks + their corresponding return approach temperature (Delta)
+        ambient_temp (float): outside air temperature
+        data_center_full_load (float): total data center capacity
+        DC_Config (object): Configuration object containing cooling_efficiency_factor and pue_overhead
 
-        Returns:
-            CRAC_Fan_load (float): CRAC fan power
-            CT_Fan_pwr (float):  Cooling tower fan power
-            CRAC_cooling_load (float): CRAC cooling load
-            Compressor_load (float): Chiller compressor load
-        """
+    Returns:
+        tuple: (CRAC_Fan_load, CT_Fan_pwr, CRAC_cooling_load, Compressor_load, power_consumed_CW, power_consumed_CT)
+    """
+    # Apply cooling efficiency factor to all cooling-related power calculations
+    cooling_efficiency = getattr(DC_Config, 'cooling_efficiency_factor', 1.0)
+    pue_overhead = getattr(DC_Config, 'pue_overhead', 1.0)
+
     # Air system calculations
     m_sys = DC_Config.RHO_AIR * DC_Config.CRAC_SUPPLY_AIR_FLOW_RATE_pu * data_center_full_load
-    CRAC_cooling_load = m_sys * DC_Config.C_AIR * max(0.0, avg_CRAC_return_temp - CRAC_setpoint) # coo.Q_thistime
-    CRAC_Fan_load = DC_Config.CRAC_FAN_REF_P * (DC_Config.CRAC_SUPPLY_AIR_FLOW_RATE_pu / DC_Config.CRAC_REFRENCE_AIR_FLOW_RATE_pu)**3
+    CRAC_cooling_load = m_sys * DC_Config.C_AIR * max(0.0, avg_CRAC_return_temp - CRAC_setpoint) / cooling_efficiency
+    CRAC_Fan_load = (DC_Config.CRAC_FAN_REF_P * (DC_Config.CRAC_SUPPLY_AIR_FLOW_RATE_pu / DC_Config.CRAC_REFRENCE_AIR_FLOW_RATE_pu)**3) / cooling_efficiency
     
-    chiller_power = calculate_chiller_power(DC_Config.CT_FAN_REF_P, CRAC_cooling_load, ambient_temp)
+    # Apply PUE overhead to chiller power
+    chiller_power = calculate_chiller_power(DC_Config.CT_FAN_REF_P, CRAC_cooling_load, ambient_temp) * pue_overhead
 
-    # Chiller power calculation
-    power_consumed_CW = (DC_Config.CW_PRESSURE_DROP * DC_Config.CW_WATER_FLOW_RATE) / DC_Config.CW_PUMP_EFFICIENCY
-
-    # Chilled water pump power calculation
-    power_consumed_CT = (DC_Config.CT_PRESSURE_DROP*DC_Config.CT_WATER_FLOW_RATE)/DC_Config.CT_PUMP_EFFICIENCY
+    # Apply efficiency to pump power calculations
+    power_consumed_CW = (DC_Config.CW_PRESSURE_DROP * DC_Config.CW_WATER_FLOW_RATE) / (DC_Config.CW_PUMP_EFFICIENCY * cooling_efficiency)
+    power_consumed_CT = (DC_Config.CT_PRESSURE_DROP * DC_Config.CT_WATER_FLOW_RATE) / (DC_Config.CT_PUMP_EFFICIENCY * cooling_efficiency)
 
     if ambient_temp < 5:
         return CRAC_Fan_load, 0.0, CRAC_cooling_load, chiller_power, power_consumed_CW, power_consumed_CT
 
-    # Cooling tower fan power calculations
+    # Cooling tower fan power calculations with efficiency factor
     Cooling_tower_air_delta = max(50 - (ambient_temp - CRAC_setpoint), 1)
     m_air = CRAC_cooling_load / (DC_Config.C_AIR * Cooling_tower_air_delta)
     v_air = m_air / DC_Config.RHO_AIR
     
-    # Reference cooling tower air flow rate
     if ctafr is None:
         ctafr = DC_Config.CT_REFRENCE_AIR_FLOW_RATE
-    CT_Fan_pwr = DC_Config.CT_FAN_REF_P * (min(v_air / ctafr, 1))**3
+    CT_Fan_pwr = (DC_Config.CT_FAN_REF_P * (min(v_air / ctafr, 1))**3) / cooling_efficiency
     
-    # ToDo: exploring the new chiller_power method
     return CRAC_Fan_load, CT_Fan_pwr, CRAC_cooling_load, chiller_power, power_consumed_CW, power_consumed_CT
 
 def chiller_sizing(DC_Config, min_CRAC_setpoint=16, max_CRAC_setpoint=22, max_ambient_temp=40.0):
