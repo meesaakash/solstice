@@ -35,18 +35,14 @@ def compare_locations():
     }
     
     # Locations to compare
-    locations = ['TX', 'CA', 'WA']
+    locations = ['TX']
     location_names = {
         'TX': 'Texas',
-        'CA': 'California',
-        'WA': 'Washington'
     }
     
     # Location-specific configurations
     locations_configs = {
         'TX': {'location': 'TX'},
-        'CA': {'location': 'CA'},
-        'WA': {'location': 'WA'}
     }
     
     results = []
@@ -121,9 +117,21 @@ def compare_cooling_systems():
     
     # Cooling-specific configurations
     cooling_configs = {
-        'air': {'cooling_type': 'air'},
-        'water': {'cooling_type': 'water'},
-        'hybrid': {'cooling_type': 'hybrid'}
+        'air': {
+            'cooling_type': 'air',
+            'cooling_efficiency_factor': 0.6,  # Lower efficiency for air cooling
+            'pue_overhead': 1.7               # Higher PUE for air cooling
+        },
+        'water': {
+            'cooling_type': 'water',
+            'cooling_efficiency_factor': 0.8,  # Better efficiency for water cooling
+            'pue_overhead': 1.3               # Lower PUE for water cooling
+        },
+        'hybrid': {
+            'cooling_type': 'hybrid',
+            'cooling_efficiency_factor': 0.85, # Best efficiency for hybrid
+            'pue_overhead': 1.25              # Best PUE for hybrid systems
+        }
     }
     
     results = []
