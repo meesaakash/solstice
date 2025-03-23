@@ -1,0 +1,160 @@
+{
+  "dates": ["2025-01-01", "2025-01-02", "2025-01-03", "2025-01-04", "2025-01-05"],
+  "data": [
+    {
+      "date": "2025-01-01",
+      "renewableGen": {
+        "north": { "value": 3500, "unit": "MW" },
+        "west": { "value": 8000, "unit": "MW" },
+        "south": { "value": 1200, "unit": "MW" },
+        "houston": { "value": 800, "unit": "MW" },
+        "panhandle": { "value": 4500, "unit": "MW" }
+      },
+      "lmp": {
+        "north": { "value": 35.2, "unit": "$/MWh" },
+        "west": { "value": 28.4, "unit": "$/MWh" },
+        "south": { "value": 42.7, "unit": "$/MWh" },
+        "houston": { "value": 45.1, "unit": "$/MWh" },
+        "panhandle": { "value": 25.6, "unit": "$/MWh" }
+      },
+      "energyConsumption": {
+        "north": { "value": 15000, "unit": "MWh" },
+        "west": { "value": 8500, "unit": "MWh" },
+        "south": { "value": 12000, "unit": "MWh" },
+        "houston": { "value": 18000, "unit": "MWh" },
+        "panhandle": { "value": 5000, "unit": "MWh" }
+      },
+      "temperature": {
+        "north": { "value": 85, "unit": "°F" },
+        "west": { "value": 92, "unit": "°F" },
+        "south": { "value": 88, "unit": "°F" },
+        "houston": { "value": 90, "unit": "°F" },
+        "panhandle": { "value": 78, "unit": "°F" }
+      }
+    },
+    {
+      "date": "2025-01-02",
+      "renewableGen": {
+        "north": { "value": 3200, "unit": "MW" },
+        "west": { "value": 7800, "unit": "MW" },
+        "south": { "value": 1100, "unit": "MW" },
+        "houston": { "value": 750, "unit": "MW" },
+        "panhandle": { "value": 4200, "unit": "MW" }
+      },
+      "lmp": {
+        "north": { "value": 38.5, "unit": "$/MWh" },
+        "west": { "value": 30.2, "unit": "$/MWh" },
+        "south": { "value": 45.8, "unit": "$/MWh" },
+        "houston": { "value": 48.3, "unit": "$/MWh" },
+        "panhandle": { "value": 27.9, "unit": "$/MWh" }
+      },
+      "energyConsumption": {
+        "north": { "value": 16200, "unit": "MWh" },
+        "west": { "value": 9000, "unit": "MWh" },
+        "south": { "value": 13500, "unit": "MWh" },
+        "houston": { "value": 19500, "unit": "MWh" },
+        "panhandle": { "value": 5500, "unit": "MWh" }
+      },
+      "temperature": {
+        "north": { "value": 87, "unit": "°F" },
+        "west": { "value": 94, "unit": "°F" },
+        "south": { "value": 90, "unit": "°F" },
+        "houston": { "value": 92, "unit": "°F" },
+        "panhandle": { "value": 80, "unit": "°F" }
+      }
+    },
+    {
+      "date": "2025-01-03",
+      "renewableGen": {
+        "north": { "value": 2800, "unit": "MW" },
+        "west": { "value": 7200, "unit": "MW" },
+        "south": { "value": 900, "unit": "MW" },
+        "houston": { "value": 650, "unit": "MW" },
+        "panhandle": { "value": 3800, "unit": "MW" }
+      },
+      "lmp": {
+        "north": { "value": 42.3, "unit": "$/MWh" },
+        "west": { "value": 33.8, "unit": "$/MWh" },
+        "south": { "value": 49.2, "unit": "$/MWh" },
+        "houston": { "value": 52.6, "unit": "$/MWh" },
+        "panhandle": { "value": 30.5, "unit": "$/MWh" }
+      },
+      "energyConsumption": {
+        "north": { "value": 17500, "unit": "MWh" },
+        "west": { "value": 9800, "unit": "MWh" },
+        "south": { "value": 14800, "unit": "MWh" },
+        "houston": { "value": 21000, "unit": "MWh" },
+        "panhandle": { "value": 6200, "unit": "MWh" }
+      },
+      "temperature": {
+        "north": { "value": 90, "unit": "°F" },
+        "west": { "value": 98, "unit": "°F" },
+        "south": { "value": 93, "unit": "°F" },
+        "houston": { "value": 95, "unit": "°F" },
+        "panhandle": { "value": 84, "unit": "°F" }
+      }
+    },
+    {
+      "date": "2025-01-04",
+      "renewableGen": {
+        "north": { "value": 3100, "unit": "MW" },
+        "west": { "value": 7600, "unit": "MW" },
+        "south": { "value": 1050, "unit": "MW" },
+        "houston": { "value": 720, "unit": "MW" },
+        "panhandle": { "value": 4100, "unit": "MW" }
+      },
+      "lmp": {
+        "north": { "value": 36.8, "unit": "$/MWh" },
+        "west": { "value": 29.5, "unit": "$/MWh" },
+        "south": { "value": 44.1, "unit": "$/MWh" },
+        "houston": { "value": 46.8, "unit": "$/MWh" },
+        "panhandle": { "value": 26.7, "unit": "$/MWh" }
+      },
+      "energyConsumption": {
+        "north": { "value": 14800, "unit": "MWh" },
+        "west": { "value": 8200, "unit": "MWh" },
+        "south": { "value": 11500, "unit": "MWh" },
+        "houston": { "value": 17200, "unit": "MWh" },
+        "panhandle": { "value": 4800, "unit": "MWh" }
+      },
+      "temperature": {
+        "north": { "value": 82, "unit": "°F" },
+        "west": { "value": 90, "unit": "°F" },
+        "south": { "value": 85, "unit": "°F" },
+        "houston": { "value": 87, "unit": "°F" },
+        "panhandle": { "value": 76, "unit": "°F" }
+      }
+    },
+    {
+      "date": "2025-01-05",
+      "renewableGen": {
+        "north": { "value": 3400, "unit": "MW" },
+        "west": { "value": 7900, "unit": "MW" },
+        "south": { "value": 1150, "unit": "MW" },
+        "houston": { "value": 780, "unit": "MW" },
+        "panhandle": { "value": 4400, "unit": "MW" }
+      },
+      "lmp": {
+        "north": { "value": 34.6, "unit": "$/MWh" },
+        "west": { "value": 27.9, "unit": "$/MWh" },
+        "south": { "value": 41.5, "unit": "$/MWh" },
+        "houston": { "value": 44.2, "unit": "$/MWh" },
+        "panhandle": { "value": 24.8, "unit": "$/MWh" }
+      },
+      "energyConsumption": {
+        "north": { "value": 13500, "unit": "MWh" },
+        "west": { "value": 7800, "unit": "MWh" },
+        "south": { "value": 10800, "unit": "MWh" },
+        "houston": { "value": 16500, "unit": "MWh" },
+        "panhandle": { "value": 4500, "unit": "MWh" }
+      },
+      "temperature": {
+        "north": { "value": 80, "unit": "°F" },
+        "west": { "value": 88, "unit": "°F" },
+        "south": { "value": 83, "unit": "°F" },
+        "houston": { "value": 85, "unit": "°F" },
+        "panhandle": { "value": 74, "unit": "°F" }
+      }
+    }
+  ]
+} 
