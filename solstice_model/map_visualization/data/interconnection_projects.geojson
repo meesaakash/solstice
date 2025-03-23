@@ -1,0 +1,1967 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.1193873811951,
+          33.30613840647092
+        ]
+      },
+      "properties": {
+        "id": "19INR0054",
+        "name": "Monte Cristo 1 Wind",
+        "capacity": 234.5,
+        "status": "SS Completed, FIS Completed, IA",
+        "zone": "north",
+        "energy_type": "wind"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.04513763901558,
+          33.09756797028169
+        ]
+      },
+      "properties": {
+        "id": "19INR0055",
+        "name": "Monte Cristo 2 Wind",
+        "capacity": 233.9,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "north",
+        "energy_type": "wind"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.60569751584946,
+          32.140583186288794
+        ]
+      },
+      "properties": {
+        "id": "20INR0248",
+        "name": "DAMAZO (Second Division) SOLAR",
+        "capacity": 100.2,
+        "status": "SS Completed, FIS Completed, IA",
+        "zone": "west",
+        "energy_type": "solar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.69088293980487,
+          31.87443718037093
+        ]
+      },
+      "properties": {
+        "id": "21INR0210",
+        "name": "Adamstown Solar",
+        "capacity": 251.28,
+        "status": "SS Completed, FIS Started, IA",
+        "zone": "west",
+        "energy_type": "solar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.0382862276903,
+          33.33394968072678
+        ]
+      },
+      "properties": {
+        "id": "21INR0262",
+        "name": "Grandfalls Storage SLF",
+        "capacity": 0.0,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "north",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.33456139658612,
+          28.521837401052988
+        ]
+      },
+      "properties": {
+        "id": "21INR0344",
+        "name": "Lunis Creek Solar SLF",
+        "capacity": 617.12,
+        "status": "SS Completed, FIS Started, IA",
+        "zone": "south",
+        "energy_type": "solar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.11414452452544,
+          33.21467741076488
+        ]
+      },
+      "properties": {
+        "id": "22INR0387",
+        "name": "Val Vista Grid BESS 1",
+        "capacity": 209.32,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "north",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.28896163744639,
+          33.2037709662488
+        ]
+      },
+      "properties": {
+        "id": "22INR0426",
+        "name": "LUBIO SOLAR",
+        "capacity": 54.47,
+        "status": "SS Completed, FIS Completed, IA",
+        "zone": "north",
+        "energy_type": "solar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.26970663812081,
+          33.18126415300057
+        ]
+      },
+      "properties": {
+        "id": "22INR0427",
+        "name": "BRP Kabru BESS ",
+        "capacity": 202.45,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "north",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.36891742912213,
+          33.33920950622865
+        ]
+      },
+      "properties": {
+        "id": "22INR0511",
+        "name": "Gransolar Texas One",
+        "capacity": 50.8,
+        "status": "SS Completed, FIS Completed, IA",
+        "zone": "north",
+        "energy_type": "solar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.38364230493204,
+          33.300586050760444
+        ]
+      },
+      "properties": {
+        "id": "22INR0549",
+        "name": "Tanzanite Storage",
+        "capacity": 265.8,
+        "status": "SS Completed, FIS Completed, IA",
+        "zone": "north",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.6695118223082,
+          28.664131892844143
+        ]
+      },
+      "properties": {
+        "id": "22INR0554",
+        "name": "Platinum Storage",
+        "capacity": 309.53,
+        "status": "SS Completed, FIS Completed, IA",
+        "zone": "south",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.34355643481005,
+          33.17237713491536
+        ]
+      },
+      "properties": {
+        "id": "22INR0605",
+        "name": "Camino Santiago Solar",
+        "capacity": 196.3,
+        "status": "SS Completed, FIS Completed, IA",
+        "zone": "north",
+        "energy_type": "solar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.40880566011379,
+          31.806694440640854
+        ]
+      },
+      "properties": {
+        "id": "23INR0010",
+        "name": "Plateau Solar",
+        "capacity": 300.0,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "west",
+        "energy_type": "solar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.06941366110715,
+          33.2511054546766
+        ]
+      },
+      "properties": {
+        "id": "23INR0066",
+        "name": "Accalia Point Solar",
+        "capacity": 190.5,
+        "status": "SS Completed, FIS Completed, No IA",
+        "zone": "north",
+        "energy_type": "solar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.34663922813543,
+          33.206466821985465
+        ]
+      },
+      "properties": {
+        "id": "23INR0087",
+        "name": "Kinenos Solar",
+        "capacity": 203.17,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "north",
+        "energy_type": "solar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.2300600675876,
+          33.19310196269848
+        ]
+      },
+      "properties": {
+        "id": "23INR0104",
+        "name": "BRP Kamet BESS",
+        "capacity": 202.46,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "north",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.46646732450051,
+          28.41758347065821
+        ]
+      },
+      "properties": {
+        "id": "23INR0137",
+        "name": "BRP Diran BESS",
+        "capacity": 100.63,
+        "status": "SS Completed, FIS Started, IA",
+        "zone": "south",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.39231626394938,
+          28.614726053385063
+        ]
+      },
+      "properties": {
+        "id": "23INR0143",
+        "name": "BRP Sepik BESS",
+        "capacity": 200.85,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "south",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.33945122969457,
+          31.82076387454951
+        ]
+      },
+      "properties": {
+        "id": "23INR0144",
+        "name": "Galactic Solar",
+        "capacity": 205.2,
+        "status": "SS Completed, FIS Completed, IA",
+        "zone": "west",
+        "energy_type": "solar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.66851167452462,
+          32.0879533812409
+        ]
+      },
+      "properties": {
+        "id": "23INR0194",
+        "name": "Pequin Energy Storage",
+        "capacity": 103.4,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "west",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.36615644438591,
+          28.602478230660715
+        ]
+      },
+      "properties": {
+        "id": "23INR0223",
+        "name": "Garcitas Creek Solar",
+        "capacity": 201.94,
+        "status": "SS Completed, FIS Started, IA",
+        "zone": "south",
+        "energy_type": "solar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.37817577065067,
+          32.15167952304357
+        ]
+      },
+      "properties": {
+        "id": "23INR0228",
+        "name": "Hiru Solar",
+        "capacity": 614.4,
+        "status": "SS Completed, FIS Completed, No IA",
+        "zone": "west",
+        "energy_type": "solar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.56367890726253,
+          28.60471789120637
+        ]
+      },
+      "properties": {
+        "id": "23INR0261",
+        "name": "Dodd Solar I",
+        "capacity": 201.8,
+        "status": "SS Completed, FIS Completed, IA",
+        "zone": "south",
+        "energy_type": "solar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.07709212672013,
+          33.32700078045022
+        ]
+      },
+      "properties": {
+        "id": "23INR0272",
+        "name": "BRP Aras BESS",
+        "capacity": 303.59,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "north",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.39174070482076,
+          28.692317196820206
+        ]
+      },
+      "properties": {
+        "id": "23INR0278",
+        "name": "Tucana BESS",
+        "capacity": 201.3,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "south",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.57937094841526,
+          29.718398368999075
+        ]
+      },
+      "properties": {
+        "id": "23INR0345",
+        "name": "Elmax Power Station (TEF- Due Diligence)",
+        "capacity": 518.83,
+        "status": "SS Completed, FIS Completed, IA",
+        "zone": "houston",
+        "energy_type": "gas"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.44434966629773,
+          32.05663628812307
+        ]
+      },
+      "properties": {
+        "id": "23INR0358",
+        "name": "Castor BESS",
+        "capacity": 205.39,
+        "status": "SS Completed, FIS Completed, IA",
+        "zone": "west",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.58529329821022,
+          28.49314745741151
+        ]
+      },
+      "properties": {
+        "id": "23INR0374",
+        "name": "Grand Acres",
+        "capacity": 153.03,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "south",
+        "energy_type": "solar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.5097426169757,
+          28.49489006277395
+        ]
+      },
+      "properties": {
+        "id": "23INR0441",
+        "name": "Bug Tussle Wind Project ",
+        "capacity": 396.8,
+        "status": "SS Completed, FIS Completed, IA",
+        "zone": "south",
+        "energy_type": "wind"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.3582887661858,
+          31.992336774587457
+        ]
+      },
+      "properties": {
+        "id": "23INR0473",
+        "name": "Sepanta Solar",
+        "capacity": 217.26,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "west",
+        "energy_type": "solar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.17043664776392,
+          33.29735754864734
+        ]
+      },
+      "properties": {
+        "id": "23INR0480",
+        "name": "Camellia Storage",
+        "capacity": 90.76,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "north",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.38756373201117,
+          33.19067769434507
+        ]
+      },
+      "properties": {
+        "id": "23INR0502",
+        "name": "Adelite Storage",
+        "capacity": 231.88,
+        "status": "SS Completed, FIS Completed, IA",
+        "zone": "north",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.08099036787102,
+          33.29705189506331
+        ]
+      },
+      "properties": {
+        "id": "24INR0102",
+        "name": "Val Vista Grid BESS 2",
+        "capacity": 210.56,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "north",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.44790983737352,
+          28.42719697857207
+        ]
+      },
+      "properties": {
+        "id": "24INR0167",
+        "name": "OCI SunRoper",
+        "capacity": 265.1,
+        "status": "SS Completed, FIS Completed, No IA",
+        "zone": "south",
+        "energy_type": "solar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.5458577541785,
+          31.92219448615392
+        ]
+      },
+      "properties": {
+        "id": "24INR0282",
+        "name": "Royal River BESS",
+        "capacity": 310.7,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "west",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.39774878688024,
+          28.359980157845943
+        ]
+      },
+      "properties": {
+        "id": "24INR0326",
+        "name": "Blarney Solar",
+        "capacity": 81.0,
+        "status": "SS Completed, FIS Completed, No IA",
+        "zone": "south",
+        "energy_type": "solar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.596375405533,
+          28.305903944237887
+        ]
+      },
+      "properties": {
+        "id": "24INR0337",
+        "name": "Eldora Solar",
+        "capacity": 200.94,
+        "status": "SS Completed, FIS Completed, IA",
+        "zone": "south",
+        "energy_type": "solar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.6263027490701,
+          28.616832814665653
+        ]
+      },
+      "properties": {
+        "id": "24INR0338",
+        "name": "Eldora BESS",
+        "capacity": 201.31,
+        "status": "SS Completed, FIS Completed, IA",
+        "zone": "south",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.6283178376219,
+          28.3494872150242
+        ]
+      },
+      "properties": {
+        "id": "24INR0355",
+        "name": "Anatole Renewable Energy Storage",
+        "capacity": 207.82,
+        "status": "SS Completed, FIS Completed, IA",
+        "zone": "south",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.39909896522512,
+          33.32986759332345
+        ]
+      },
+      "properties": {
+        "id": "24INR0436",
+        "name": "Carambola BESS",
+        "capacity": 100.9,
+        "status": "SS Completed, FIS Started, IA",
+        "zone": "north",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.60145699025723,
+          31.823854910493136
+        ]
+      },
+      "properties": {
+        "id": "24INR0444",
+        "name": "Hiru Storage",
+        "capacity": 503.8,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "west",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.36532635468991,
+          33.29658075552168
+        ]
+      },
+      "properties": {
+        "id": "24INR0448",
+        "name": "PSE Minnesota TX Storage",
+        "capacity": 94.0,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "north",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.58416055037395,
+          28.49884161485058
+        ]
+      },
+      "properties": {
+        "id": "24INR0449",
+        "name": "PSE Richardson TX Storage",
+        "capacity": 100.0,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "south",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.21203963535254,
+          33.24389205536051
+        ]
+      },
+      "properties": {
+        "id": "24INR0462",
+        "name": "Ventana Ranch Solar",
+        "capacity": 502.03,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "north",
+        "energy_type": "solar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.65571057514691,
+          31.89648212801465
+        ]
+      },
+      "properties": {
+        "id": "24INR0570",
+        "name": "Marcus Energy Storage",
+        "capacity": 201.04,
+        "status": "SS Completed, FIS Completed, No IA",
+        "zone": "west",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.3541195130513,
+          31.853088184845443
+        ]
+      },
+      "properties": {
+        "id": "24INR0572",
+        "name": " Harlingen III BESS",
+        "capacity": 110.0,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "west",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.4825560941415,
+          32.19689293847151
+        ]
+      },
+      "properties": {
+        "id": "25INR0097",
+        "name": "Soleil Solar",
+        "capacity": 728.72,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "west",
+        "energy_type": "solar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.66323150577955,
+          32.18187852467641
+        ]
+      },
+      "properties": {
+        "id": "25INR0098",
+        "name": "Soleil Storage",
+        "capacity": 301.64,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "west",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.14234314642574,
+          33.014039615335655
+        ]
+      },
+      "properties": {
+        "id": "25INR0131",
+        "name": "SOSA Storage",
+        "capacity": 157.36,
+        "status": "SS Completed, FIS Started, IA",
+        "zone": "north",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.470572343005,
+          28.381849204127086
+        ]
+      },
+      "properties": {
+        "id": "25INR0144",
+        "name": "Jasper BESS",
+        "capacity": 201.13,
+        "status": "SS Completed, FIS Completed, No IA",
+        "zone": "south",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.5940169255255,
+          31.962858043042562
+        ]
+      },
+      "properties": {
+        "id": "25INR0154",
+        "name": "Nymphaea Solar",
+        "capacity": 120.9,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "west",
+        "energy_type": "solar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.66048936543687,
+          32.02316492602241
+        ]
+      },
+      "properties": {
+        "id": "25INR0155",
+        "name": "Nymphaea Storage",
+        "capacity": 61.0,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "west",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.37762918698358,
+          28.332087229085097
+        ]
+      },
+      "properties": {
+        "id": "25INR0193",
+        "name": "Nockenut Springs Solar 4",
+        "capacity": 201.15,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "south",
+        "energy_type": "solar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.31634500845836,
+          28.590953945895777
+        ]
+      },
+      "properties": {
+        "id": "25INR0270",
+        "name": "Harryoung Solar",
+        "capacity": 190.01,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "south",
+        "energy_type": "solar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.59151102398077,
+          28.394120010403675
+        ]
+      },
+      "properties": {
+        "id": "25INR0280",
+        "name": "Nockenut Springs Solar 5",
+        "capacity": 201.15,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "south",
+        "energy_type": "solar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.0861938979968,
+          33.09598132904445
+        ]
+      },
+      "properties": {
+        "id": "25INR0370",
+        "name": "Willis Storage",
+        "capacity": 176.13,
+        "status": "SS Completed, FIS Completed, No IA",
+        "zone": "north",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.5679816582504,
+          28.564496796539277
+        ]
+      },
+      "properties": {
+        "id": "25INR0371",
+        "name": "McMurtre Storage",
+        "capacity": 176.13,
+        "status": "SS Completed, FIS Completed, No IA",
+        "zone": "south",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.47322074812735,
+          31.95049579079937
+        ]
+      },
+      "properties": {
+        "id": "25INR0378",
+        "name": "Second Division Storage",
+        "capacity": 0.0,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "west",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.48332914389309,
+          28.593954920164432
+        ]
+      },
+      "properties": {
+        "id": "25INR0400",
+        "name": "Maldives Solar (Alternate POI)",
+        "capacity": 184.0,
+        "status": "SS Completed, FIS Started, IA",
+        "zone": "south",
+        "energy_type": "solar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.24029531209452,
+          33.311999992363944
+        ]
+      },
+      "properties": {
+        "id": "25INR0421",
+        "name": "Aldrin 138 BESS",
+        "capacity": 207.0,
+        "status": "SS Completed, FIS Started, IA",
+        "zone": "north",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.23468364217686,
+          33.07172760450255
+        ]
+      },
+      "properties": {
+        "id": "25INR0444",
+        "name": "Peridot Storage",
+        "capacity": 50.48,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "north",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.37787781253708,
+          31.83575501464128
+        ]
+      },
+      "properties": {
+        "id": "25INR0452",
+        "name": "Spaniel Farm Solar Project",
+        "capacity": 100.52,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "west",
+        "energy_type": "solar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.43109190119819,
+          31.977282348867828
+        ]
+      },
+      "properties": {
+        "id": "25INR0466",
+        "name": "Yooperlite Storage",
+        "capacity": 175.65,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "west",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.36411068493382,
+          32.1317456286495
+        ]
+      },
+      "properties": {
+        "id": "25INR0480",
+        "name": "Bell Creek BESS ",
+        "capacity": 200.9,
+        "status": "SS Completed, FIS Completed, IA",
+        "zone": "west",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.53886968159306,
+          31.92094110661506
+        ]
+      },
+      "properties": {
+        "id": "25INR0656",
+        "name": "Gilleys Energy Storage",
+        "capacity": 306.4,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "west",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.41997007429093,
+          31.922211018397253
+        ]
+      },
+      "properties": {
+        "id": "26INR0018",
+        "name": "Galactic Storage SLF",
+        "capacity": 0.0,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "west",
+        "energy_type": "gas"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.2582255456431,
+          33.34190468834162
+        ]
+      },
+      "properties": {
+        "id": "26INR0083",
+        "name": "Zeppelin Energy Storage",
+        "capacity": 163.93,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "north",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.30153984034997,
+          31.979892974656956
+        ]
+      },
+      "properties": {
+        "id": "26INR0121",
+        "name": "Pioneer Hutt Solar (Alternative POI)",
+        "capacity": 116.0,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "west",
+        "energy_type": "solar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.35193781648177,
+          33.314167095477075
+        ]
+      },
+      "properties": {
+        "id": "26INR0183",
+        "name": "TRIFECTA Gas",
+        "capacity": 453.0,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "north",
+        "energy_type": "gas"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.31739754260732,
+          32.135153907468855
+        ]
+      },
+      "properties": {
+        "id": "26INR0226",
+        "name": "First Capitol BESS",
+        "capacity": 257.48,
+        "status": "SS Completed, FIS Started, IA",
+        "zone": "west",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.57224295536673,
+          31.8195961135115
+        ]
+      },
+      "properties": {
+        "id": "26INR0248",
+        "name": "Sengun BESS",
+        "capacity": 200.89,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "west",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.48787132359213,
+          31.983909268083252
+        ]
+      },
+      "properties": {
+        "id": "26INR0279",
+        "name": "Firebird Solar",
+        "capacity": 100.42,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "west",
+        "energy_type": "solar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.16321065973011,
+          33.031917196314346
+        ]
+      },
+      "properties": {
+        "id": "26INR0280",
+        "name": "Pethrus BESS",
+        "capacity": 174.08,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "north",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.66194301048694,
+          32.012001139845154
+        ]
+      },
+      "properties": {
+        "id": "26INR0287",
+        "name": "Firebird BESS",
+        "capacity": 100.42,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "west",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.40413959839194,
+          28.36745020756033
+        ]
+      },
+      "properties": {
+        "id": "26INR0300",
+        "name": "Whitewright Solar 2",
+        "capacity": 301.69,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "south",
+        "energy_type": "solar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.4097504596611,
+          32.11475868513668
+        ]
+      },
+      "properties": {
+        "id": "26INR0314",
+        "name": "Brazos River BESS",
+        "capacity": 180.36,
+        "status": "SS Completed, FIS Completed, No IA",
+        "zone": "west",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.50677735803313,
+          31.954566226557617
+        ]
+      },
+      "properties": {
+        "id": "26INR0321",
+        "name": "Windmill Ridge Storage",
+        "capacity": 151.4,
+        "status": "SS Completed, FIS Completed, No IA",
+        "zone": "west",
+        "energy_type": "wind"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.49379949183819,
+          29.610040942349137
+        ]
+      },
+      "properties": {
+        "id": "26INR0343",
+        "name": "Stinger Energy Storage",
+        "capacity": 200.8,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "houston",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -103.6252777,
+          31.396675
+        ]
+      },
+      "properties": {
+        "id": "26INR0388",
+        "name": "Aggie Solar Project SLF",
+        "capacity": 103.7,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "west",
+        "energy_type": "solar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -103.6252777,
+          31.396675
+        ]
+      },
+      "properties": {
+        "id": "26INR0389",
+        "name": "AGGIE STORAGE PROJECT SLF",
+        "capacity": 0.0,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "west",
+        "energy_type": "gas"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.41147236105004,
+          32.150900424137006
+        ]
+      },
+      "properties": {
+        "id": "26INR0417",
+        "name": "GAMAY ENERGY STORAGE",
+        "capacity": 418.6,
+        "status": "SS Completed, FIS Completed, No IA",
+        "zone": "west",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.29803227426308,
+          33.2578071985451
+        ]
+      },
+      "properties": {
+        "id": "26INR0442",
+        "name": "Donna BESS",
+        "capacity": 53.91,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "north",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.11773602177259,
+          33.00920604930122
+        ]
+      },
+      "properties": {
+        "id": "26INR0464",
+        "name": "Ceres BESS",
+        "capacity": 202.7,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "north",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.5112884018872,
+          28.421370654127276
+        ]
+      },
+      "properties": {
+        "id": "26INR0614",
+        "name": "Bell County Leifester Storage",
+        "capacity": 205.0,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "south",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.58886438750852,
+          28.647792212018643
+        ]
+      },
+      "properties": {
+        "id": "26INR0618",
+        "name": "Taylor County Paul Storage",
+        "capacity": 205.0,
+        "status": "SS Started, FIS Started, No IA",
+        "zone": "south",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.52661289149712,
+          32.14901443528982
+        ]
+      },
+      "properties": {
+        "id": "27INR0015",
+        "name": "Cumbia Energy Center",
+        "capacity": 200.0,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "west",
+        "energy_type": "other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.28134812131051,
+          33.08180923375187
+        ]
+      },
+      "properties": {
+        "id": "27INR0068",
+        "name": "Jerboa BESS",
+        "capacity": 201.08,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "north",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.962023,
+          30.615932
+        ]
+      },
+      "properties": {
+        "id": "27INR0085",
+        "name": "Eagle Claw Energy Center",
+        "capacity": 200.84,
+        "status": "SS Completed, FIS Completed, No IA",
+        "zone": "north",
+        "energy_type": "other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.50631023861833,
+          28.595277577371622
+        ]
+      },
+      "properties": {
+        "id": "27INR0091",
+        "name": "Oak Tree Energy Storage",
+        "capacity": 310.2,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "south",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.41110877346428,
+          28.356913426153348
+        ]
+      },
+      "properties": {
+        "id": "27INR0102",
+        "name": "Cottonseed Energy Storage",
+        "capacity": 207.6,
+        "status": "SS Completed, FIS Completed, No IA",
+        "zone": "south",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.02765075482799,
+          33.29544738980555
+        ]
+      },
+      "properties": {
+        "id": "27INR0118",
+        "name": "Grapefruit Solar",
+        "capacity": 301.2,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "north",
+        "energy_type": "solar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.583,
+          28.755
+        ]
+      },
+      "properties": {
+        "id": "27INR0144",
+        "name": "Angel City Solar",
+        "capacity": 221.02,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "south",
+        "energy_type": "solar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.22802881049228,
+          33.34342981548106
+        ]
+      },
+      "properties": {
+        "id": "27INR0205",
+        "name": "Donna Solar",
+        "capacity": 168.13,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "north",
+        "energy_type": "solar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.0947038338103,
+          33.27335129979257
+        ]
+      },
+      "properties": {
+        "id": "27INR0252",
+        "name": "Parula Energy Center ",
+        "capacity": 250.95,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "north",
+        "energy_type": "other"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.69054085942052,
+          32.029123253270434
+        ]
+      },
+      "properties": {
+        "id": "27INR0341",
+        "name": "Tomahawk Road BESS",
+        "capacity": 257.25,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "west",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.36617478449472,
+          32.01909859203608
+        ]
+      },
+      "properties": {
+        "id": "27INR0375",
+        "name": "Buck Ranch Solar SLF",
+        "capacity": 40.8,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "west",
+        "energy_type": "solar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.69503597226226,
+          31.927845558276132
+        ]
+      },
+      "properties": {
+        "id": "27INR0376",
+        "name": "Buck Ranch Storage SLF",
+        "capacity": 40.8,
+        "status": "SS Started, FIS Started, No IA",
+        "zone": "west",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.12637225668348,
+          33.224645699179504
+        ]
+      },
+      "properties": {
+        "id": "27INR0441",
+        "name": "Pavo Creek Storage ",
+        "capacity": 150.3,
+        "status": "SS Started, FIS Started, No IA",
+        "zone": "north",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.39930587495522,
+          33.2229705618831
+        ]
+      },
+      "properties": {
+        "id": "28INR0097",
+        "name": "Catamount Storage",
+        "capacity": 515.44,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "north",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.01667414510989,
+          33.1690399282538
+        ]
+      },
+      "properties": {
+        "id": "28INR0186",
+        "name": "Saddlehorn Energy Storage",
+        "capacity": 256.8,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "north",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.10203996096796,
+          33.3160345959815
+        ]
+      },
+      "properties": {
+        "id": "28INR0212",
+        "name": "Badger Solar",
+        "capacity": 301.83,
+        "status": "SS Started, FIS Started, No IA",
+        "zone": "north",
+        "energy_type": "solar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.18900375710209,
+          33.25332593242737
+        ]
+      },
+      "properties": {
+        "id": "28INR0213",
+        "name": "Badger BESS",
+        "capacity": 154.12,
+        "status": "SS Started, FIS Started, No IA",
+        "zone": "north",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.58264573010581,
+          28.31927448424769
+        ]
+      },
+      "properties": {
+        "id": "28INR0221",
+        "name": "Rio Star Energy Storage",
+        "capacity": 245.2,
+        "status": "SS Started, FIS Started, No IA",
+        "zone": "south",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.18007446766893,
+          33.06054179482664
+        ]
+      },
+      "properties": {
+        "id": "28INR0272",
+        "name": "Miracle Ranch Solar SLF",
+        "capacity": 221.6,
+        "status": "SS Started, FIS Started, No IA",
+        "zone": "north",
+        "energy_type": "solar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.30855318412337,
+          33.10914446495135
+        ]
+      },
+      "properties": {
+        "id": "28INR0273",
+        "name": "Miracle Ranch BESS SLF",
+        "capacity": 0.0,
+        "status": "SS Started, FIS Started, No IA",
+        "zone": "north",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.32174635790248,
+          33.16921708213301
+        ]
+      },
+      "properties": {
+        "id": "28INR0300",
+        "name": "Champion Road BESS",
+        "capacity": 257.3,
+        "status": "SS Started, FIS Started, No IA",
+        "zone": "north",
+        "energy_type": "battery"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.12802513144608,
+          33.33459210084773
+        ]
+      },
+      "properties": {
+        "id": "29INR0013",
+        "name": "Queen Mesa Solar II",
+        "capacity": 307.0,
+        "status": "SS Completed, FIS Started, No IA",
+        "zone": "north",
+        "energy_type": "solar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -101.5581939228553,
+          31.870953189494845
+        ]
+      },
+      "properties": {
+        "id": "29INR0015",
+        "name": "Funston Solar (Alternative POI Lone Star)",
+        "capacity": 351.4,
+        "status": "SS Completed, FIS Not Started, IA",
+        "zone": "west",
+        "energy_type": "solar"
+      }
+    }
+  ]
+}

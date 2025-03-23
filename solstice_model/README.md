@@ -1,28 +1,28 @@
 # Solstice Datacenter Model
 
-A scalable framework for datacenter energy modeling with location-specific data, cooling system options, and carbon intensity tracking.
+A scalable framework for datacenter energy modeling with location-specific data, cooling system options, carbon intensity tracking, and interactive ERCOT energy data visualization.
 
 ## Overview
 
-The Solstice Datacenter Model is designed to simulate and analyze energy consumption and carbon emissions for datacenters in various geographic locations, considering factors such as:
+The Solstice Datacenter Model is designed to simulate and analyze energy consumption and carbon emissions for datacenters in various geographic locations, with a particular focus on Texas and the ERCOT grid. The framework includes both modeling components and visualization tools.
 
-- Compute load and workload patterns
-- Datacenter hardware energy use
-- Datacenter size and capacity
-- Cooling system type (air-cooled vs. water-cooled)
-- Geographic location (with a focus on Texas and ERCOT)
-- Location-specific weather data
-- Carbon intensity by region
+### Key Features
 
-The framework provides tools for:
-- Running simulations over specific time periods
-- Analyzing energy consumption patterns
-- Calculating carbon emissions
-- Comparing different datacenter configurations
-- Visualizing results with plots and charts
-- Processing natural language queries about simulation results
+- **Datacenter Modeling**:
+  - Compute load and workload pattern simulation
+  - Datacenter hardware energy consumption analysis
+  - Cooling system modeling (air-cooled vs. water-cooled)
+  - Carbon emissions calculation
 
-## Installation
+- **ERCOT Energy Visualization**:
+  - Interactive map of ERCOT regions
+  - Visualization of renewable generation, energy consumption, LMP prices
+  - Interconnection queue data visualization
+  - Project filtering by energy type (solar, wind, gas, battery, etc.)
+
+## Quick Start
+
+### Installation
 
 ```bash
 # Clone the repository
@@ -33,7 +33,35 @@ cd solstice/solstice_model
 pip install -r requirements.txt
 ```
 
-## Usage
+### Running the Datacenter Model
+
+```bash
+# Run a basic datacenter simulation
+python examples/compare_datacenter_configs.py
+
+# The results will be saved in the comparison_results directory
+```
+
+### Running the ERCOT Energy Visualization
+
+```bash
+# Navigate to the map visualization directory
+cd map_visualization
+
+# Process ERCOT Interconnection Queue data (if available)
+python process_interconnection_data.py
+
+# Process ERCOT energy data
+python process_data.py
+
+# Start a local web server
+python -m http.server 8000
+
+# Open your browser and navigate to:
+# http://localhost:8000
+```
+
+## Datacenter Modeling
 
 ### Basic Usage
 
@@ -89,23 +117,86 @@ custom_model = SolsticeDatacenterModel(
 )
 ```
 
-### Natural Language Queries
+## ERCOT Energy Visualization
 
-The framework provides a natural language query interface for extracting insights:
+The visualization tool provides an interactive map of the ERCOT grid with various data layers:
 
-```python
-# Query the model
-energy_info = model.query("What is the average energy consumption?")
-carbon_info = model.query("Tell me about the carbon emissions")
-water_info = model.query("How much water does the datacenter use?")
+### Features
+
+- **Regional Data Visualization**:
+  - Renewable Generation (MW)
+  - Locational Marginal Price ($/MWh)
+  - Energy Consumption (MWh)
+  - Temperature (°F)
+
+- **Interconnection Queue**:
+  - View and filter projects in the ERCOT interconnection queue
+  - Project details: name, capacity, energy type, status
+  - Capacity statistics by region and energy type
+  - Filter by energy type (solar, wind, gas, battery, etc.)
+
+### Running the Visualization
+
+1. **Prepare the Data**:
+
+```bash
+# Navigate to the map visualization directory
+cd map_visualization
+
+# Process interconnection queue data
+python process_interconnection_data.py
+
+# Process ERCOT energy data
+python process_data.py
 ```
 
-## Examples
+2. **Start the Web Server**:
+
+```bash
+# Start a local web server on port 8000
+python -m http.server 8000
+```
+
+3. **View the Visualization**:
+   - Open your web browser
+   - Navigate to: http://localhost:8000
+
+### Using the Visualization
+
+1. **Toggle Data Types**:
+   - Use the dropdown menu to select data type (renewable generation, LMP, etc.)
+   - Select a region or view all regions
+   - Select a date to view historical data
+
+2. **View Interconnection Queue**:
+   - Toggle the "Interconnection Queue" switch
+   - Use checkboxes to filter by energy type
+   - Hover over projects to see details
+   - Click on projects or regions for more information
+
+3. **Data Analysis**:
+   - View charts and statistics in the right panel
+   - Toggle between different views and filters
+   - See capacity breakdowns by energy type and region
+
+### Adding Custom Data
+
+To add your own ERCOT data or interconnection queue information:
+
+1. **ERCOT Data**:
+   - Place CSV files in `solstice/solstice_model/data/ERCOT_data/`
+   - Modify `process_data.py` if needed to handle your specific format
+
+2. **Interconnection Queue Data**:
+   - Place spreadsheet in `solstice/solstice_model/data/ERCOT_data/Interconnection/`
+   - The script will automatically detect and process it
+
+## Example Scripts
 
 The `examples` directory contains several example scripts demonstrating different use cases:
 
-- `compare_datacenter_configs.py`: Compare different datacenter configurations (locations, cooling systems, workload patterns)
-- `custom_datacenter_config.py`: Work with custom datacenter configurations and research paper models
+- `compare_datacenter_configs.py`: Compare different datacenter configurations
+- `custom_datacenter_config.py`: Work with custom datacenter configurations
 - `llm_query_interface.py`: Demonstrates a simulated LLM interface for natural language queries
 
 To run an example:
@@ -115,38 +206,30 @@ cd solstice_model
 python examples/compare_datacenter_configs.py
 ```
 
-## Framework Components
-
-### Core Components
-
-- `SolsticeDatacenterModel`: Main class for datacenter energy modeling
-- `LocationManager`: Manages location-specific data (weather, etc.)
-- `CoolingManager`: Handles different cooling system types
-- `EnergyAnalyzer`: Analyzes and visualizes energy consumption data
-- `CarbonIntensityTracker`: Tracks carbon intensity for different regions
-
-### Data Sources
+## Data Sources
 
 - `data/Weather/`: EPW weather files for different locations
 - `data/CarbonIntensity/`: Carbon intensity data by region
 - `data/Workload/`: Example workload patterns
+- `data/ERCOT_data/`: ERCOT energy data and interconnection queue information
 
-## Future Extensions
+## Troubleshooting
 
-The framework is designed to be scalable for future extensions, including:
+- **Port already in use**: If you see "Address already in use" when starting the web server, try a different port:
+  ```bash
+  python -m http.server 8001
+  ```
+  Then navigate to http://localhost:8001
 
-- Integration with LLM tools for text-to-query functionality
-- Support for additional cooling technologies
-- Integration of more detailed workload models
-- Real-time carbon intensity data
-- Optimization of datacenter operations for carbon reduction
+- **Missing dependencies**: If you encounter errors about missing modules, make sure you've installed all requirements:
+  ```bash
+  pip install -r requirements.txt
+  ```
 
-## References
-
-The model is based on research and approaches from:
-- Postema, Björn Frits. "Energy-efficient data centres: model-based analysis of power-performance trade-offs." (2018).
-- Sun, Kaiyu, et al. "Prototype energy models for data centers." Energy and Buildings 231 (2021): 110603.
-- Breen, Thomas J., et al. "From chip to cooling tower data center modeling: Part I influence of server inlet temperature and temperature rise across cabinet." 2010 12th IEEE Intersociety Conference on Thermal and Thermomechanical Phenomena in Electronic Systems. IEEE, 2010.
+- **Data processing errors**: For issues with Excel files, ensure you have openpyxl installed:
+  ```bash
+  pip install openpyxl
+  ```
 
 ## License
 

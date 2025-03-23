@@ -1,0 +1,41 @@
+{
+  "zone_capacity": {
+    "north": {
+      "solar": 2497.0299999999997,
+      "wind": 468.4,
+      "gas": 453.0,
+      "battery": 4632.349999999999,
+      "other": 451.78999999999996
+    },
+    "west": {
+      "solar": 3350.8,
+      "wind": 151.4,
+      "gas": 0.0,
+      "battery": 3935.7200000000003,
+      "other": 200.0
+    },
+    "south": {
+      "solar": 3019.9500000000003,
+      "wind": 396.8,
+      "gas": 0,
+      "battery": 2871.6999999999994,
+      "other": 0
+    },
+    "houston": {
+      "solar": 0,
+      "wind": 0,
+      "gas": 518.83,
+      "battery": 200.8,
+      "other": 0
+    },
+    "panhandle": {
+      "solar": 0,
+      "wind": 0,
+      "gas": 0,
+      "battery": 0,
+      "other": 0
+    }
+  },
+  "total_projects": 109,
+  "updated": "2025-03-23 18:38:30"
+}
