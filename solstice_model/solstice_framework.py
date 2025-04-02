@@ -148,8 +148,8 @@ class SolsticeDatacenterModel:
         )
         
         # Scale the datacenter based on capacity
-        scaling_factor = self.datacenter_capacity_mw * 1e6 / self.dc_model.total_DC_full_load
-        print(f"Datacenter scaling factor: {scaling_factor:.2f}")
+        self.scaling_factor = self.datacenter_capacity_mw * 1e6 / self.dc_model.total_DC_full_load
+        print(f"Datacenter scaling factor: {self.scaling_factor:.2f}")
     
     def run_simulation(self, workload_pattern: Optional[List[float]] = None) -> Dict:
         """
@@ -230,8 +230,8 @@ class SolsticeDatacenterModel:
                 CRAC_setpoint=crac_setpoint
             )
             
-            # Calculate total IT power
-            it_power = sum(rack_cpu_power) + sum(rack_itfan_power)
+            # Calculate total IT power and apply scaling factor
+            it_power = (sum(rack_cpu_power) + sum(rack_itfan_power)) * self.scaling_factor
             self.simulation_results['datacenter_energy'].append(it_power)
             
             # Calculate CRAC return temperature
@@ -246,25 +246,25 @@ class SolsticeDatacenterModel:
                     CRAC_setpoint=crac_setpoint,
                     avg_CRAC_return_temp=avg_crac_return_temp,
                     ambient_temp=ambient_temp,
-                    data_center_full_load=self.dc_model.total_DC_full_load,
+                    data_center_full_load=self.dc_model.total_DC_full_load * self.scaling_factor,  # Apply scaling factor
                     DC_Config=self
                 )
             
-            # Calculate cooling power based on cooling type
+            # Calculate cooling power based on cooling type and apply scaling factor
             if self.cooling_type == 'air':
-                cooling_power = (crac_fan_power + chiller_power) * self.cooling_efficiency_factor
+                cooling_power = (crac_fan_power + chiller_power) * self.cooling_efficiency_factor * self.scaling_factor
                 water_usage = 0.0  # No water usage for air cooling
             else:  # water cooling
                 cooling_power = (crac_fan_power + ct_fan_power + chiller_power + 
-                                cw_pump_power + ct_pump_power) * self.cooling_efficiency_factor
+                                cw_pump_power + ct_pump_power) * self.cooling_efficiency_factor * self.scaling_factor
                 
                 # Update cooling tower water parameters for water usage calculation
                 self.dc_model.hot_water_temp = avg_crac_return_temp
                 self.dc_model.cold_water_temp = crac_setpoint
                 self.dc_model.wet_bulb_temp = self.location_manager.get_wet_bulb_temperature(timestamp)
                 
-                # Calculate water usage
-                water_usage = self.dc_model.calculate_cooling_tower_water_usage()
+                # Calculate water usage and apply scaling factor
+                water_usage = self.dc_model.calculate_cooling_tower_water_usage() * self.scaling_factor
             
             self.simulation_results['cooling_energy'].append(cooling_power)
             self.simulation_results['water_usage'].append(water_usage)
